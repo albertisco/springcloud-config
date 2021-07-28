@@ -1,0 +1,15 @@
+server:
+  port: 7000
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+zuul:
+  routes:
+    servicio-productos:
+     path: /sproductos/**
+     service-id: productosManagement
+    servicio-pedidos:
+     path: /spedidos/**
+     service-id: pedidosManagement
