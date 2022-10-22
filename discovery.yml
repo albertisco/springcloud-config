@@ -2,10 +2,10 @@ spring:
   application:
     name: discovery
 server:
-  port: 8082
+  port: 8083
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://github.com/albertisco/springcloud-config
+      defaultZone: http://localhost:8083/eureka/
     register-with-eureka: false
     fetch-registry: false
