@@ -1,1 +1,11 @@
-
+spring:
+  application:
+    name: gymapp
+server:
+  port: 8084
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 15
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka/
