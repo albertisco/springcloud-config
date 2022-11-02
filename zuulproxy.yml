@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: zuulproxy
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
  
 eureka:
   instance:
