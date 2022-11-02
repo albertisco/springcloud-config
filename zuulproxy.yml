@@ -5,4 +5,17 @@ spring:
   application:
     name: zuulproxy
  
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    region: default
+    registryFetchIntervalSeconds: 15
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka/
+  
+
+ 
 
