@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: zuulproxy
+    name: zuulproxyserver
     
 management:
   endpoints:
