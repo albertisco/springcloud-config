@@ -4,7 +4,14 @@ server:
 spring:
   application:
     name: zuulproxyserver
-    
+  cloud:
+    gateway:
+      routes:
+      - id: gymapp
+        uri: lb://GYMAPP
+        predicates:
+        - Path=/usuario/**
+        
 management:
   endpoints:
     web:
