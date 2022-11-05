@@ -11,6 +11,8 @@ spring:
       routes:
       - id: gymapp
         uri: lb://GYMAPP
+        predicates:
+        - Path=/**
         
 management:
   endpoints:
