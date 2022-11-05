@@ -2,7 +2,7 @@ spring:
   application:
     name: gymapp
 server:
-  port: 8084
+  port: 8085
 eureka:
   instance:
     preferIpAddress: true
