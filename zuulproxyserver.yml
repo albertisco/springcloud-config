@@ -1,5 +1,7 @@
 server:
   port: 8888
+  servlet:
+    context-path: /zuul
 
 spring:
   application:
@@ -9,8 +11,6 @@ spring:
       routes:
       - id: gymapp
         uri: lb://GYMAPP
-        predicates:
-        - Path=/usuario/**
         
 management:
   endpoints:
