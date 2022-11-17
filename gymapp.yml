@@ -3,6 +3,8 @@ spring:
     name: gymapp
 server:
   port: 8085
+  servlet:
+    context-path: /gymapp
 eureka:
   instance:
     preferIpAddress: true
