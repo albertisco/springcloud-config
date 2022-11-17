@@ -1,0 +1,19 @@
+server:
+  port: 8887
+  servlet:
+    context-path: /serviciosaludo
+
+spring:
+  application:
+    name: serviciosaludo
+    
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    region: default
+    registryFetchIntervalSeconds: 15
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka/
+ 
+ 
